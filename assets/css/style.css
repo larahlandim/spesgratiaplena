@@ -1,0 +1,101 @@
+/* =========================================================
+   Spes | Gratia Plena — identidade visual
+   ========================================================= */
+:root {
+  --creme: #F7F1E8;
+  --creme-escuro: #EFE5D8;
+  --marrom: #5B4636;
+  --dourado: #B08D57;
+  --rose: #E9D6CF;
+  --texto: #4A3A2E;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #FFFDF9;
+  color: var(--texto);
+  font-family: 'Lato', system-ui, sans-serif;
+  font-weight: 300;
+}
+main { flex: 1; }
+
+h1, h2, h3, h4, h5, h6, .fonte-titulo {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 600;
+  color: var(--marrom);
+}
+.fonte-script { font-family: 'Pinyon Script', cursive; font-weight: 400; }
+
+a { color: var(--marrom); }
+a:hover { color: var(--dourado); }
+
+/* Menu */
+.navbar-spes {
+  background: var(--creme);
+  border-bottom: 1px solid rgba(176, 141, 87, .45);
+}
+.navbar-spes .nav-link { color: var(--marrom); font-weight: 400; letter-spacing: .04em; }
+.navbar-spes .nav-link:hover { color: var(--dourado); }
+.logo-menu { height: 38px; width: auto; }
+.badge-dourado { background: var(--dourado); color: #fff; }
+
+/* Botões */
+.btn { border-radius: 999px; letter-spacing: .03em; }
+.btn-primary { background: var(--marrom); border-color: var(--marrom); }
+.btn-primary:hover, .btn-primary:focus { background: #43332A; border-color: #43332A; }
+.btn-outline-primary { color: var(--marrom); border-color: var(--marrom); }
+.btn-outline-primary:hover { background: var(--marrom); border-color: var(--marrom); color: #fff; }
+.btn-success, .btn-dourado { background: var(--dourado); border-color: var(--dourado); color: #fff; }
+.btn-success:hover, .btn-dourado:hover { background: #967545; border-color: #967545; color: #fff; }
+.form-control:focus, .form-select:focus { border-color: var(--dourado); box-shadow: 0 0 0 .2rem rgba(176, 141, 87, .25); }
+
+/* Topo da vitrine */
+.vitrine-topo {
+  background: radial-gradient(circle at 50% 35%, #FFFDF9 0%, var(--creme) 55%, var(--creme-escuro) 100%);
+  border: 1px solid rgba(176, 141, 87, .35);
+  border-radius: 20px;
+  padding: 2rem 1.25rem;
+  text-align: center;
+}
+.vitrine-topo img { width: 100%; max-width: 280px; height: auto; }
+.vitrine-topo p { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.25rem; font-style: italic; }
+
+/* Cards de produto */
+.card { border: 0; border-radius: 18px; overflow: hidden; }
+.card-produto { transition: transform .2s, box-shadow .2s; }
+.card-produto:hover { transform: translateY(-4px); box-shadow: 0 .75rem 1.5rem rgba(91, 70, 54, .12) !important; }
+.card-produto .card-img-top { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: var(--creme); }
+.card-produto h2 { font-size: 1.3rem; }
+.badge.bg-light { background: var(--creme) !important; color: var(--marrom) !important; font-weight: 400; letter-spacing: .05em; }
+
+.img-produto {
+  width: 100%;
+  max-width: 520px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 20px;
+  background: var(--creme);
+}
+.img-mini { width: 60px; height: 60px; object-fit: cover; background: var(--creme); border-radius: 10px; }
+
+.preco { color: var(--marrom); font-weight: 700; font-size: 1.2rem; font-family: 'Lato', sans-serif; }
+
+/* Formas de pagamento */
+.opcao-pagamento { cursor: pointer; border-color: var(--creme-escuro); }
+.btn-check:checked + .opcao-pagamento { border-color: var(--dourado); background: var(--creme); }
+
+/* Rodapé */
+.rodape { background: var(--marrom); color: var(--creme); }
+.rodape .marca { font-family: 'Pinyon Script', cursive; font-size: 1.8rem; }
+
+/* Telas maiores */
+@media (min-width: 768px) {
+  .vitrine-topo { padding: 3rem; }
+  .vitrine-topo img { max-width: 340px; }
+}
+
+/* Links em formato de botão (ex.: "Voltar para a loja") */
+.btn-link { color: var(--marrom); text-decoration: none; }
+.btn-link:hover { color: var(--dourado); }
