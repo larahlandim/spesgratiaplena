@@ -2,7 +2,7 @@
 
 Atividade Final do 4º Bimestre – Aplicação web de comércio eletrônico com fluxo completo de venda.
 
-**Equipe:** Larah Landim (adicione aqui os outros integrantes, se houver)
+**Equipe:** Larah Landim
 
 ## Identidade visual
 Marca **Spes | Gratia Plena** ("Esperança | Cheia de Graça"), com estilo *clean* inspirado nos títulos marianos e nos santos de devoção.
